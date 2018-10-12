@@ -3,7 +3,7 @@
 #include<math.h>
 #include<stdio.h>
 #include<string.h>
-#include "Nag³ówek.h"
+#include "NAGLOWEK.h"
 
 extern "C" {
 #include"./sdl-2.0.7/include/SDL.h"
@@ -37,10 +37,10 @@ int main(int argc, char **argv)
 
 		}
 	}
-	// okno konsoli nie jest widoczne, je¿eli chcemy zobaczyæ
+	// okno konsoli nie jest widoczne, jeÂ¿eli chcemy zobaczyÃ¦
 	// komunikaty wypisywane printf-em trzeba w opcjach:
 	// project -> szablon2 properties -> Linker -> System -> Subsystem
-	// zmieniæ na "Console"
+	// zmieniÃ¦ na "Console"
 	// console window is not visible, to see the printf output
 	// the option:
 	// project -> szablon2 properties -> Linker -> System -> Subsystem
@@ -54,7 +54,7 @@ int main(int argc, char **argv)
 		return 1;
 	}
 
-	// tryb pe³noekranowy / fullscreen mode
+	// tryb peÂ³noekranowy / fullscreen mode
 	//	rc = SDL_CreateWindowAndRenderer(0, 0, SDL_WINDOW_FULLSCREEN_DESKTOP,
 	//	                                 &window, &renderer);
 	rc = SDL_CreateWindowAndRenderer(SCREEN_WIDTH, SCREEN_HEIGHT, 0,
@@ -81,7 +81,7 @@ int main(int argc, char **argv)
 		SCREEN_WIDTH, SCREEN_HEIGHT);
 
 
-	// wy³¹czenie widocznoœci kursora myszy
+	// wyÂ³Â¹czenie widocznoÅ“ci kursora myszy
 	//SDL_ShowCursor(SDL_DISABLE);
 
 	// wczytanie obrazkow
@@ -155,7 +155,7 @@ int main(int argc, char **argv)
 		t2 = SDL_GetTicks();
 
 		// w tym momencie t2-t1 to czas w milisekundach,
-		// jaki uplyna³ od ostatniego narysowania ekranu
+		// jaki uplynaÂ³ od ostatniego narysowania ekranu
 		// delta to ten sam czas w sekundach
 		// here t2-t1 is the time in milliseconds since
 		// the last screen was drawn
@@ -193,7 +193,7 @@ int main(int argc, char **argv)
 		SDL_RenderCopy(renderer, scrtex, NULL, NULL);
 		SDL_RenderPresent(renderer);
 		//int co_robic;
-		// obs³uga zdarzeñ (o ile jakieœ zasz³y) / handling of events (if there were any)
+		// obsÂ³uga zdarzeÃ± (o ile jakieÅ“ zaszÂ³y) / handling of events (if there were any)
 		if (sprawdz(tablica_sterujaca) == 0)
 		{
 			
