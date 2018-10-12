@@ -9,7 +9,7 @@
 #include<math.h>
 #include<stdio.h>
 #include<string.h>
-#include "Nag³ówek.h"
+#include "NAGLOWEK.h"
 
 extern "C" {
 #include"./sdl-2.0.7/include/SDL.h"
@@ -412,7 +412,7 @@ int znajdz_ludzika(char tablica[9][9], bool co, char czego_szukac)
 	return x;
 };
 
-// kontrolka mówi czy to pion(0) czy poziom (1)
+// kontrolka mÃ³wi czy to pion(0) czy poziom (1)
 bool warunki(char tablica[9][9], char kierunek, int kontrolka)
 {
 	bool zamiana = true;
@@ -514,7 +514,7 @@ bool warunki(char tablica[9][9], char kierunek, int kontrolka)
 			tablica[a - 1][b] = GRACZ;
 			if (znacznik == 1)	tablica[a][b] = DOCELOWE;
 			else tablica[a][b] = WOLNY;
-			//ró¿nica w charach mmiedzy docelowe a zajete docelowe etc.
+			//rÃ³Â¿nica w charach mmiedzy docelowe a zajete docelowe etc.
 			tablica[a - 2][b] = tablica[a - 2][b] + 2;
 		}
 		else if (tablica[a - 1][b] == DOCELOWE)
@@ -556,7 +556,7 @@ bool warunki(char tablica[9][9], char kierunek, int kontrolka)
 				znacznik = 0;
 			}
 			else tablica[a][b] = WOLNY;
-			//ró¿nica w charach mmiedzy docelowe a zajete docelowe etc.
+			//rÃ³Â¿nica w charach mmiedzy docelowe a zajete docelowe etc.
 			tablica[a + 2][b] = tablica[a + 2][b] + 2;
 		}
 		else if (tablica[a + 1][b] == DOCELOWE)
