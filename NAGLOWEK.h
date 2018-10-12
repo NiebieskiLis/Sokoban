@@ -1,11 +1,11 @@
-#ifndef NAG≥ÛWEK_H_INCLUDED
-#define NAG≥ÛWEK_H_INCLUDED
+#ifndef NAGLOWEK_H_INCLUDED
+#define NAGLOWEK_H_INCLUDED
 
 #define _USE_MATH_DEFINES
 #include<math.h>
 #include<stdio.h>
 #include<string.h>
-#include "Nag≥Ûwek.h"
+#include "NAGLOWEK.h"
 #define POCZATEK_PLANSZY_X 100
 #define POCZATEK_PLANSZY_Y 100
 #define ROZMIAR_SRITE 30
@@ -40,4 +40,4 @@ void WYSWIETL_OPCJE(SDL_Renderer *renderer, SDL_Texture *scrtex, SDL_Surface *ch
 bool warunki(char tablica[9][9], char kierunek, int kontrolka);
 void DrawGame(SDL_Surface *screen, SDL_Surface *sprite0, SDL_Surface *sprite1, SDL_Surface *sprite2, SDL_Surface *sprite3, SDL_Surface *sprite4, SDL_Surface *sprite5, char tablica[9][9]);
 //bool warunki(char tablica[9][9], int kierunek);
-#endif // NAG≥ÛWEK_H_INCLUDED
+#endif // NAGLOWEK_H_INCLUDED
